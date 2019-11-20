@@ -8,9 +8,9 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@latest
       - name: Build and test
         run: |
-          xcodebuild clean test -project AaaaaandAction.xcodeproj -scheme AaaaaandActionTests -destination "platform=iOS Simulator,name=iPhone 8"
+          xcodebuild clean test -project AaaaaandAction.xcodeproj -scheme AaaaaandAction -destination "platform=iOS Simulator,name=iPhone 8"
           bash <(curl -s https://codecov.io/bash)
 
