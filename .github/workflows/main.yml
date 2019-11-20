@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v1
       - name: Build and test
         run: |
-          xcodebuild clean test -project AaaaaandAction.xcodeproj -scheme AaaaaandActionTests -destination "platform=iOS Simulator,name=iPhone 11"
+          xcodebuild clean test -project AaaaaandAction.xcodeproj -scheme AaaaaandActionTests -destination "platform=iOS Simulator,name=iPhone 8"
           bash <(curl -s https://codecov.io/bash)
 
